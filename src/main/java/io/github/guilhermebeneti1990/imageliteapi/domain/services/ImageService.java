@@ -1,0 +1,7 @@
+package io.github.guilhermebeneti1990.imageliteapi.domain.services;
+
+import io.github.guilhermebeneti1990.imageliteapi.domain.entities.Image;
+
+public interface ImageService {
+    Image save(Image image);
+}
