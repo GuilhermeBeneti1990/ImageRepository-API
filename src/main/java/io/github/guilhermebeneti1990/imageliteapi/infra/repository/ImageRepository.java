@@ -22,7 +22,7 @@ public interface ImageRepository extends JpaRepository<Image, String>, JpaSpecif
         }
 
         if(StringUtils.hasText(query)) {
-            spec.and(anyOf(nameLike(query), tagsLike(query)));
+            spec = spec.and(anyOf(nameLike(query), tagsLike(query)));
         }
         return findAll(spec);
     }
